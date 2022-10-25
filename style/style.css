@@ -33,14 +33,24 @@ header ul a{
     font-weight: bold;
     padding: 5px 10px;
     color: #000000;
+    position: relative;
 
 }
 
-.active{
-    border-bottom: 5px solid #000000;
-    border-width: 5px;
-    border-radius: 5px;
+
+header ul .active::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    margin-bottom: -8px;
 }
+
 
 
 header div{
